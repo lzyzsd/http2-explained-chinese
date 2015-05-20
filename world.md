@@ -20,7 +20,7 @@ http2减少了网络往返传输的数量，并且用多路复用和快速丢弃
 
 近年来，web开发者、web开发环境为一些HTTP 1.1的问题提供了临时解决方案。不妨回忆一下，其中一些我已在上文中简单的介绍了。
 
-这些解决方案很多是工具和开发者默认使用的，这很可能会损害到http2的性能，或者至少让我们没法真正利用到http2新的强大威力。Spriting和内联应该是http2里面最不需要的了。因为http2更倾向于使用更少的连接，所以Sharding甚至会伤害到http2的性能。
+这些解决方案很多是工具和开发者默认使用的，这很可能会损害到http2的性能，或者至少让我们没法真正利用Crhome到http2新的强大威力。Spriting和内联应该是http2里面最不需要的了。因为http2更倾向于使用更少的连接，所以Sharding甚至会伤害到http2的性能。
 
 这里的问题就是：web网站和web开发们至少在短期内需要同时支持HTTP 1.1和http2的客户端。否则的话，使所有用户获得最好的体验将是一个挑战。
 
@@ -52,7 +52,7 @@ Nginx表示“我们计划于2015年末发布带有HTTP/2支持的nginx和NGINX 
 
 江湖上有太多传言暗示着这个世界越来越被Google所控制，但事实显然不是这样。这个协议是IETF制定的，就跟过去30年间很多其他协议一样。但不得不承认，SPDY是Google非常出色的成果。它不仅仅证明了开发一个新协议的可行性，还充分展现了新协议能带来的好处。
 
-Google公开[声明](http://blog.chromium.org/2015/02/hello-http2-goodbye-spdy-http-is_9.html)了他们会在2016年移除Crhome里对SPDY和NPN的支持，并且极力推动服务器迁移至HTTP/2。
+Google公开[声明](http://blog.chromium.org/2015/02/hello-http2-goodbye-spdy-http-is_9.html)了他们会在2016年移除Chrome里对SPDY和NPN的支持，并且极力推动服务器迁移至HTTP/2。
 
 **8.4.2. “这个协议只在浏览器上有用”**
 
